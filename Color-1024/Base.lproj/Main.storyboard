@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jiyucho.ttf">
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+            <string>Jiyucho</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Color_1024" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-vb-96o">
+                                <rect key="frame" x="92" y="300" width="140" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="1tz-7u-Z8E">
+                                <rect key="frame" x="69" y="377" width="185" height="50"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="stU-In-J4s">
+                                <rect key="frame" x="98" y="462" width="129" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highscore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcf-cU-ffe">
+                                <rect key="frame" x="44" y="342" width="103" height="27"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ru-S7-eJQ">
+                                <rect key="frame" x="163" y="342" width="112" height="27"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwv-Mr-glz">
+                                <rect key="frame" x="72" y="385" width="177" height="33"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="24"/>
+                                <state key="normal" title="タイムアタック">
+                                    <color key="titleColor" red="0.047058828175067902" green="0.011764707043766975" blue="0.066666670143604279" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeAttack" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x1S-ke-8ff"/>
+                                    <segue destination="Z36-NM-v19" kind="presentation" id="Vp1-sh-aps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soF-j4-ck7">
+                                <rect key="frame" x="101" y="469" width="119" height="32"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="24"/>
+                                <state key="normal" title="手数勝負">
+                                    <color key="titleColor" red="0.074509806930000005" green="0.011764707040000001" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="banAttack" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k51-ho-PoT"/>
+                                    <segue destination="Z36-NM-v19" kind="presentation" id="ttK-ia-XlB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVh-BT-KfN">
+                                <rect key="frame" x="104" y="305" width="127" height="36"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="24"/>
+                                <state key="normal" title="スタート！">
+                                    <color key="titleColor" red="0.074509806931018829" green="0.011764707043766975" blue="0.066666670143604279" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z36-NM-v19" kind="presentation" id="uZ6-Pz-UfG"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Sx1-pI-kaE">
+                                <rect key="frame" x="176" y="258" width="94" height="29"/>
+                                <color key="tintColor" red="0.0" green="0.31764706969261169" blue="0.88627457618713379" alpha="1" colorSpace="deviceRGB"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2048" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-Qm-mQH">
+                                <rect key="frame" x="67" y="260" width="57" height="27"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999秒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-7f-jMW">
+                                <rect key="frame" x="154" y="423" width="121" height="28"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ベストTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R2-3P-ULw">
+                                <rect key="frame" x="36" y="423" width="118" height="28"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最少手数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN5-4J-Oyk">
+                                <rect key="frame" x="52" y="509" width="86" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999回" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85h-Fi-KMm">
+                                <rect key="frame" x="188" y="509" width="87" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Th0-4N-f6e">
+                                <rect key="frame" x="46" y="28" width="258" height="222"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862751245498657" green="0.70588237047195435" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="HighScoreLabel" destination="8Ru-S7-eJQ" id="F5O-7d-hvv"/>
+                        <outlet property="clearNum" destination="Sx1-pI-kaE" id="y7i-5T-k8H"/>
+                        <outlet property="clearNumLabel" destination="GfA-Qm-mQH" id="KqL-bw-6fy"/>
+                        <outlet property="kaisuNumLabel" destination="85h-Fi-KMm" id="t2y-lY-ec7"/>
+                        <outlet property="timeNumLabel" destination="UmT-7f-jMW" id="mne-fd-CwY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="212"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="hty-sQ-FRR">
+            <objects>
+                <viewController id="Z36-NM-v19" customClass="gameViewController" customModule="Color_1024" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ljy-gZ-kzi"/>
+                        <viewControllerLayoutGuide type="bottom" id="IFL-6j-BFi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fh-Vf-A4m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b35-b0-FBd">
+                                <rect key="frame" x="87" y="207" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-tB-d1V">
+                                <rect key="frame" x="160" y="207" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wdW-gB-n6o">
+                                <rect key="frame" x="15" y="210" width="71" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTj-LV-EYO">
+                                <rect key="frame" x="230" y="210" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FCV-SI-hzb">
+                                <rect key="frame" x="13" y="279" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DDF-CA-xpH">
+                                <rect key="frame" x="87" y="279" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-pZ-scL">
+                                <rect key="frame" x="160" y="279" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-KS-Eid">
+                                <rect key="frame" x="233" y="279" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-Vt-Kyf">
+                                <rect key="frame" x="233" y="353" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUR-38-aqa">
+                                <rect key="frame" x="160" y="353" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3u-Gn-k7R">
+                                <rect key="frame" x="87" y="353" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWy-HS-nYf">
+                                <rect key="frame" x="13" y="353" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h07-cD-RO1">
+                                <rect key="frame" x="15" y="425" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kSR-oL-JU4">
+                                <rect key="frame" x="87" y="427" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0I-0U-MtB">
+                                <rect key="frame" x="160" y="427" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhJ-Dr-O5D">
+                                <rect key="frame" x="230" y="424" width="74" height="74"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ban.png" translatesAutoresizingMaskIntoConstraints="NO" id="spO-99-oLY">
+                                <rect key="frame" x="13" y="207" width="294" height="294"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4i-Wb-FrW">
+                                <rect key="frame" x="23" y="218" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087752525249" green="0.60969216283686856" blue="0.013129358012745666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiM-eb-9sW">
+                                <rect key="frame" x="243" y="218" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-Nz-aGv">
+                                <rect key="frame" x="23" y="291" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aY-Tq-5Cp">
+                                <rect key="frame" x="97" y="291" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rku-90-1xT">
+                                <rect key="frame" x="170" y="291" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-mM-ae7">
+                                <rect key="frame" x="242" y="291" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYA-EM-0YV">
+                                <rect key="frame" x="23" y="363" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfw-RN-RtM">
+                                <rect key="frame" x="97" y="363" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2K-WB-MXp">
+                                <rect key="frame" x="170" y="363" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-kC-hWH">
+                                <rect key="frame" x="243" y="363" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K64-Fc-dK5">
+                                <rect key="frame" x="23" y="438" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYW-pu-Fuc">
+                                <rect key="frame" x="97" y="438" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZT-50-2Up">
+                                <rect key="frame" x="170" y="438" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voQ-r8-gEh">
+                                <rect key="frame" x="243" y="438" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7i-f9-BxE">
+                                <rect key="frame" x="97" y="218" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvB-Fc-eSb">
+                                <rect key="frame" x="170" y="218" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.82479087750000002" green="0.60969216280000005" blue="0.01312935801" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="yt3-zg-w4H">
+                                <rect key="frame" x="102" y="17" width="204" height="129"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHB-1v-CCH">
+                                <rect key="frame" x="4" y="143" width="202" height="52"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNh-Dl-zdd">
+                                <rect key="frame" x="203" y="28" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-l2-RA0">
+                                <rect key="frame" x="203" y="60" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ShowNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCT-sX-gIM">
+                                <rect key="frame" x="98" y="95" width="125" height="24"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ft-Td-BOj">
+                                <rect key="frame" x="239" y="95" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HighScore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTB-dm-rLe">
+                                <rect key="frame" x="100" y="57" width="114" height="27"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-9J-x31">
+                                <rect key="frame" x="208" y="145" width="99" height="49"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCh-fF-KU5">
+                                <rect key="frame" x="209" y="145" width="99" height="47"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="25"/>
+                                <state key="normal" title="オート">
+                                    <color key="titleColor" red="0.058823533356189728" green="0.0078431377187371254" blue="0.050980396568775177" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="auto" destination="Z36-NM-v19" eventType="touchUpInside" id="Maq-lN-XOl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS8-AV-4Az">
+                                <rect key="frame" x="4" y="149" width="202" height="38"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="21"/>
+                                <state key="normal" title="スタート画面に戻る">
+                                    <color key="titleColor" red="0.023529414087533951" green="0.0" blue="0.011764707043766975" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="p6R-EW-cKa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="v9r-z7-GBG">
+                                <rect key="frame" x="9" y="28" width="109" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-vF-a9z">
+                                <rect key="frame" x="125" y="28" width="62" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9490196704864502" green="0.70196080207824707" blue="0.21176472306251526" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Score" destination="NNh-Dl-zdd" id="ucR-9G-3Bj"/>
+                        <outlet property="ShowNumSwich" destination="3Ft-Td-BOj" id="h5k-dn-ZF0"/>
+                        <outlet property="highscore" destination="WUe-l2-RA0" id="7f4-Jb-lPs"/>
+                        <outlet property="highscoreLabel" destination="XTB-dm-rLe" id="C7z-Md-u8f"/>
+                        <outlet property="img00" destination="wdW-gB-n6o" id="WD0-qD-531"/>
+                        <outlet property="img01" destination="b35-b0-FBd" id="FII-kj-s8V"/>
+                        <outlet property="img02" destination="QFX-tB-d1V" id="aBc-uv-jzw"/>
+                        <outlet property="img03" destination="fTj-LV-EYO" id="rYN-dy-wsf"/>
+                        <outlet property="img10" destination="FCV-SI-hzb" id="gem-DV-yBq"/>
+                        <outlet property="img11" destination="DDF-CA-xpH" id="5cA-HD-QSR"/>
+                        <outlet property="img12" destination="cZ3-pZ-scL" id="PUX-Dx-oUX"/>
+                        <outlet property="img13" destination="aL6-KS-Eid" id="EFs-9k-jEy"/>
+                        <outlet property="img20" destination="gWy-HS-nYf" id="tMa-zX-Y6f"/>
+                        <outlet property="img21" destination="h3u-Gn-k7R" id="LTh-AG-Ftm"/>
+                        <outlet property="img22" destination="vUR-38-aqa" id="AOs-zH-41h"/>
+                        <outlet property="img23" destination="eFf-Vt-Kyf" id="Lth-7w-mjz"/>
+                        <outlet property="img30" destination="h07-cD-RO1" id="XJb-4I-X52"/>
+                        <outlet property="img31" destination="kSR-oL-JU4" id="fJJ-1J-BPx"/>
+                        <outlet property="img32" destination="K0I-0U-MtB" id="Zug-pS-2cW"/>
+                        <outlet property="img33" destination="LhJ-Dr-O5D" id="zdG-nN-pIV"/>
+                        <outlet property="numLabel00" destination="Y4i-Wb-FrW" id="McL-nZ-FU8"/>
+                        <outlet property="numLabel01" destination="y7i-f9-BxE" id="BLo-g3-Ijo"/>
+                        <outlet property="numLabel02" destination="AvB-Fc-eSb" id="4Vg-5f-01Y"/>
+                        <outlet property="numLabel03" destination="hiM-eb-9sW" id="MAA-YH-1Io"/>
+                        <outlet property="numLabel10" destination="rEQ-Nz-aGv" id="v8G-Ve-AWB"/>
+                        <outlet property="numLabel11" destination="2aY-Tq-5Cp" id="uPd-F2-1VQ"/>
+                        <outlet property="numLabel12" destination="rku-90-1xT" id="HmS-xJ-qEn"/>
+                        <outlet property="numLabel13" destination="Xb8-mM-ae7" id="YmL-tT-3cE"/>
+                        <outlet property="numLabel20" destination="PYA-EM-0YV" id="df7-RB-jzl"/>
+                        <outlet property="numLabel21" destination="yfw-RN-RtM" id="cGw-dp-qde"/>
+                        <outlet property="numLabel22" destination="O2K-WB-MXp" id="YjC-q6-gKY"/>
+                        <outlet property="numLabel23" destination="dhS-kC-hWH" id="UKP-Cm-3Bf"/>
+                        <outlet property="numLabel30" destination="K64-Fc-dK5" id="Chp-qb-Ddx"/>
+                        <outlet property="numLabel31" destination="DYW-pu-Fuc" id="3Eh-ZD-1Sp"/>
+                        <outlet property="numLabel32" destination="MZT-50-2Up" id="xhF-VO-WzH"/>
+                        <outlet property="numLabel33" destination="voQ-r8-gEh" id="Ktf-3e-cZG"/>
+                        <outlet property="scoreLabel" destination="vBH-vF-a9z" id="BEz-Jh-gqw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nw-gN-OqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="114"/>
+        </scene>
+        <!--Clear View Controller-->
+        <scene sceneID="I3a-De-tw4">
+            <objects>
+                <viewController storyboardIdentifier="Clear" id="4aM-iU-Xzz" customClass="ClearViewController" customModule="Color_1024" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WSa-MO-y2K"/>
+                        <viewControllerLayoutGuide type="bottom" id="ABo-Ti-YdD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NKM-bB-wfg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tSs-wk-jTX">
+                                <rect key="frame" x="47" y="270" width="242" height="113"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3lZ-b6-mxf">
+                                <rect key="frame" x="46" y="423" width="248" height="58"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV2-zl-pw8">
+                                <rect key="frame" x="84" y="280" width="61" height="26"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-ML-oKz">
+                                <rect key="frame" x="174" y="282" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybf-4g-Fzk">
+                                <rect key="frame" x="106" y="213" width="123" height="40"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="34"/>
+                                <color key="textColor" red="0.14901961386203766" green="0.0" blue="0.69019609689712524" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-bg-c5o">
+                                <rect key="frame" x="56" y="437" width="226" height="30"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="25"/>
+                                <state key="normal" title="スタート画面に戻る">
+                                    <color key="titleColor" red="0.074509806930000005" green="0.011764707040000001" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="IpJ-qu-zPL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highscore" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLu-nz-SCA">
+                                <rect key="frame" x="69" y="330" width="102" height="28"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="omH-f3-WAp">
+                                <rect key="frame" x="69" y="28" width="213" height="177"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pX-BC-v66">
+                                <rect key="frame" x="174" y="333" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823535442352295" green="0.69411766529083252" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="LLu-nz-SCA" id="IRQ-c9-Joa"/>
+                        <outlet property="highScoreNumLabel" destination="2pX-BC-v66" id="jHJ-FS-UzU"/>
+                        <outlet property="scoreLabel" destination="CV2-zl-pw8" id="Ehf-EK-KKx"/>
+                        <outlet property="scoreNumLabel" destination="7mJ-ML-oKz" id="iZP-Zv-9L6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQc-Ui-o3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243" y="137"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="6DL-eZ-ODE">
+            <objects>
+                <viewController storyboardIdentifier="GameOver" id="c6K-De-Yzq" customClass="GameOverViewController" customModule="Color_1024" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T9o-ym-wiP"/>
+                        <viewControllerLayoutGuide type="bottom" id="sY0-pQ-JSl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mur-8j-a8e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oa0-6b-p2K">
+                                <rect key="frame" x="51" y="264" width="225" height="46"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-ta-AsF">
+                                <rect key="frame" x="39" y="443" width="250" height="61"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWF-Vn-6Kb">
+                                <rect key="frame" x="77" y="273" width="61" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kn-HJ-DUQ">
+                                <rect key="frame" x="165" y="273" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxp-pD-xi2">
+                                <rect key="frame" x="45" y="447" width="237" height="51"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="25"/>
+                                <state key="normal" title="スタート画面に戻る">
+                                    <color key="titleColor" red="0.074509806930000005" green="0.011764707040000001" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="DdR-eV-gRg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="oKX-Rj-mAI">
+                                <rect key="frame" x="61" y="27" width="213" height="177"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-TU-Ahc">
+                                <rect key="frame" x="77" y="212" width="170" height="44"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="34"/>
+                                <color key="textColor" red="0.72549021244049072" green="0.17647059261798859" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsP-CK-uyJ">
+                                <rect key="frame" x="82" y="375" width="156" height="33"/>
+                                <fontDescription key="fontDescription" name="Jiyucho" family="Jiyucho" pointSize="25"/>
+                                <state key="normal" title="もう１度やる">
+                                    <color key="titleColor" red="0.074509806930000005" green="0.011764707040000001" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z36-NM-v19" kind="presentation" id="Zs3-Ng-bo7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-UM-Qda">
+                                <rect key="frame" x="69" y="364" width="188" height="56"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862751245498657" green="0.70588237047195435" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="vWF-Vn-6Kb" id="NF5-px-CPy"/>
+                        <outlet property="scoreNumLabel" destination="3Kn-HJ-DUQ" id="LMw-kw-PaQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbo-ZM-zSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back2.png" width="330" height="105"/>
+        <image name="ban.png" width="591" height="592"/>
+        <image name="logo.png" width="697" height="616"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zs3-Ng-bo7"/>
+        <segue reference="DdR-eV-gRg"/>
+    </inferredMetricsTieBreakers>
+</document>
